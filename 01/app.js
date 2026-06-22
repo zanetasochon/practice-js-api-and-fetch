@@ -11,16 +11,17 @@ function init() {
     //     });
     // });
 
-    setBorderColorAsync(divList[0], redColor);
-    function redColor(red) {
-        setBorderColorAsync(red, blueColor)
+    setBorderColorAsync(divList[0], 'red', redColor);
+    function redColor() {
+        setBorderColorAsync(divList[1], 'blue', blueColor);
     }
 
-    function blueColor(blue) {    
-                setBorderColorAsync(blue, greenColor)
+    function blueColor() {    
+        setBorderColorAsync(divList[2], 'green', greenColor);
     }
+    
 
-    function greenColor(green) {
+    function greenColor() {
         console.log('finish');
     }
     
